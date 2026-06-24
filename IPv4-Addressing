@@ -1,0 +1,78 @@
+# IPv4 Addressing
+
+## Overview
+
+IPv4 (Internet Protocol Version 4) is the most widely used protocol for identifying devices on a network.
+
+An IPv4 address consists of **32 bits** divided into **4 octets**.
+
+Example:
+
+192.168.1.10
+
+Each octet ranges from **0 to 255**.
+
+---
+
+## Structure
+
+Example Address
+
+192.168.1.10
+
+| Octet | Value |
+|-------|-------|
+| 1 | 192 |
+| 2 | 168 |
+| 3 | 1 |
+| 4 | 10 |
+
+---
+
+## Public vs Private IP Addresses
+
+### Private Address Ranges
+
+| Range | CIDR |
+|--------|------|
+| 10.0.0.0 - 10.255.255.255 | /8 |
+| 172.16.0.0 - 172.31.255.255 | /12 |
+| 192.168.0.0 - 192.168.255.255 | /16 |
+
+Private addresses are used inside organizations and homes.
+
+Public IP addresses are assigned by Internet Service Providers (ISPs).
+
+---
+
+## IPv4 Classes
+
+| Class | Range | Default Mask |
+|--------|--------|--------------|
+| A | 1–126 | 255.0.0.0 |
+| B | 128–191 | 255.255.0.0 |
+| C | 192–223 | 255.255.255.0 |
+| D | 224–239 | Multicast |
+| E | 240–255 | Experimental |
+
+---
+
+## CIDR Examples
+
+| Prefix | Subnet Mask |
+|---------|-------------|
+| /24 | 255.255.255.0 |
+| /25 | 255.255.255.128 |
+| /26 | 255.255.255.192 |
+| /27 | 255.255.255.224 |
+| /28 | 255.255.255.240 |
+
+---
+
+## Key Skills Learned
+
+- IPv4 Address Structure
+- Public vs Private Networks
+- Network Identification
+- CIDR Notation
+- Subnet Masks
